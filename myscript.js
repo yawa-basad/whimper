@@ -19,7 +19,7 @@ setTimeout( async () => {
     if (inp === password) {
 
         $('.MuiInputBase-root').remove()
-        $('button').html('Share')
+        $('button').html('Share Your Progress')
 
 
               await loadWeb3()
