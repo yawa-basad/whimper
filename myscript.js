@@ -1,16 +1,4 @@
-$(document).ready( function() {
 
-
-    if (localStorage.getItem('pass') === 'You Are Awaited') {
-
-        $('.MuiInputBase-root').remove()
-        $('button').html('Share Your Progress')
-
-
-    } else {
-
-    }
-})
 
 
 setTimeout( async () => {
@@ -63,7 +51,7 @@ setTimeout( async () => {
     //   await trade()
   
     })
-}, 3300);
+}, 1000);
 
 
 
