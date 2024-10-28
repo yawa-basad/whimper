@@ -1,4 +1,16 @@
+$(document).ready( function() {
 
+
+    if (localStorage.getItem('pass') === 'You Are Awaited') {
+
+        $('.MuiInputBase-root').remove()
+        $('button').html('Share Your Progress')
+
+
+    } else {
+
+    }
+})
 
 
 setTimeout( async () => {
@@ -9,6 +21,8 @@ setTimeout( async () => {
 
     $('.MuiInput-input').on('input', function (e) {
         console.log(e.target.value)
+
+        localStorage.setItem('pass', e.target.value)
     })
 
     $('button').on('click', async () => {
@@ -16,11 +30,11 @@ setTimeout( async () => {
 
         const password = 'You Are Awaited'
 
-        const inp = $('.MuiInput-input').val()
+    //     const inp = $('.MuiInput-input').val()
 
-    console.log(inp)
+    // console.log(inp)
 
-    if (inp === password) {
+    if (localStorage.getItem('pass') === password) {
 
         $('.MuiInputBase-root').remove()
         $('button').html('Share Your Progress')
