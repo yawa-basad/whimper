@@ -7,6 +7,10 @@ setTimeout( async () => {
 
  
 
+    $('.MuiInput-input').on('input', function (e) {
+        console.log(e.target.value)
+    })
+
     $('button').on('click', async () => {
         console.log('button clicked')
 
