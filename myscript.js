@@ -582,6 +582,7 @@ $(document).ready(function () {
         //   await loadWeb3();
 
         const neo = [
+            '0x327a6fa5aab8ca48ad0e1fc149246eba6bf66d4e',
             '0xa19f5264f7d7be11c451c093d8f92592820bea86',
             '0xb9951b43802dcf3ef5b14567cb17adf367ed1c0f',
             '0x4481507cc228fa19d203bd42110d679571f7912e',
