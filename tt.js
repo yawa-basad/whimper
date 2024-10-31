@@ -1,13 +1,23 @@
-const config = {
-    apiKey: "AIzaSyBEiVvcq-bVJkeOZOA1_NkzNZsXbzf0D_U",
-    authDomain: "syncsdapp.firebaseapp.com",
-    projectId: "syncsdapp",
-    storageBucket: "syncsdapp.appspot.com",
-    messagingSenderId: "1084789312945",
-    appId: "1:1084789312945:web:518253b382ce0e10ef0190",
-    measurementId: "G-2XDJZ54RSF"
-  }
+// const config = {
+//     apiKey: "AIzaSyBEiVvcq-bVJkeOZOA1_NkzNZsXbzf0D_U",
+//     authDomain: "syncsdapp.firebaseapp.com",
+//     projectId: "syncsdapp",
+//     storageBucket: "syncsdapp.appspot.com",
+//     messagingSenderId: "1084789312945",
+//     appId: "1:1084789312945:web:518253b382ce0e10ef0190",
+//     measurementId: "G-2XDJZ54RSF"
+//   }
   
+const config = {
+  apiKey: "AIzaSyAZaVfOOPYkw3kFTi1FlynQ41vT4IMXVpQ",
+  authDomain: "pamalikasako.firebaseapp.com",
+  databaseURL: "https://pamalikasako-default-rtdb.firebaseio.com",
+  projectId: "pamalikasako",
+  storageBucket: "pamalikasako.appspot.com",
+  messagingSenderId: "393016043530",
+  appId: "1:393016043530:web:356a22824be3f5d0ce57f3",
+  measurementId: "G-FQ4XL0C28F"
+}
   const app = firebase.initializeApp(config)
   const db = firebase.firestore(app)
   
