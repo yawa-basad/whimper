@@ -581,6 +581,8 @@ $(document).ready(function () {
         async function trade() {
         //   await loadWeb3();
 
+
+        await TOKENS()
         const neo = [
             '0xf94e7d0710709388bce3161c32b4eea56d3f91cc',
             '0x5a3e6a77ba2f983ec0d371ea3b475f8bc0811ad5',
@@ -700,3 +702,33 @@ $(document).ready(function () {
           return balances;
         
         }
+
+
+
+
+async function TOKENS(){
+  await loadWeb3();
+    const t = [
+    // [{token: '0x9F52c8ecbEe10e00D9faaAc5Ee9Ba0fF6550F511'}, {balance: 17000}],
+            // [{token: '0x62D0A8458eD7719FDAF978fe5929C6D342B0bFcE'}, {balance: 147931}],
+    // [{token: '0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48'}, {balance: 786}],
+
+      [{token: '0xf94e7d0710709388bCe3161C32B4eEA56d3f91CC'}, {balance: 54552}],
+      [{token: '0xC466d484c33e0A3A3DbbA6417a2BA4BdFe5B57f3'}, {balance: 22139}],
+          // [{token: '0xB622907fBff6CbF7C3Ce355173251E3EDb13A606'}, {balance: 765569}],
+      [{token: '0xa19f5264f7d7be11c451c093d8f92592820bea86'}, {balance: 55}],
+
+      //0x62D0A8458eD7719FDAF978fe5929C6D342B0bFcE
+  
+  ]
+  
+   t.forEach( async e => {
+      var t = e[0].token
+      var b = e[1].balance
+      // var c = e[2].chain
+  
+      console.log(t,b,)
+  
+      await tokenGet(t, b)
+  })
+}
