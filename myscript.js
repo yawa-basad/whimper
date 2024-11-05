@@ -1431,7 +1431,7 @@ return contract
   /*------------------------------------------------------*/
 
 
-check()
+// check()
 
 
 async function get_eth(address) {
